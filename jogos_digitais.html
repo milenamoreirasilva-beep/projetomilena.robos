@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogos Digitais - 1º Ano</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #007d99;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>robô inteligente</h1>
+
+        <p>1º Ano do Ensino Médio</p>
+
+        <p>
+            Criatividade, tecnologia e inovação.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tipos de Jogos</a>
+
+        <a href="#inovacao">Como são criados</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="original-bc9005f2201cfb175f85da1edd075222.jpg.webp"
+                alt="Jogos digitais e controles"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>🎮 Bem-vindos ao mundo dos robos.</h2>
+
+                <p>
+                    Este espaço foi criado para mostrar como robos são funcionais e ajudam na produtividade.
+                </p>
+
+                <br>
+
+                <p>
+                    “Os robôs inteligentes representam o futuro da tecnologia, unindo inovação e inteligência artificial para transformar o mundo e tornar a vida humana mais fácil.” 🤖🚀
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>conheça os tipos de robos</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="TROY-UPSCALE-400x569.png"
+                    alt="Jogos de ação e aventura"
+                >
+
+                <h3>robô humanoide</h3>
+
+                <p>
+                    Os robôs humanoides são máquinas criadas para se parecer com os seres humanos, possuindo características como cabeça, braços e pernas. Eles podem utilizar inteligência artificial para conversar, reconhecer objetos e realizar tarefas. São usados em indústrias, hospitais, pesquisas e no atendimento ao público. Seu objetivo é ajudar as pessoas, facilitar atividades do dia a dia e contribuir para o avanço da tecnologia. 🤖
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (1).jpeg"
+                    alt="Jogos retrô e arcade"
+                >
+
+                <h3>robôs indrustriais</h3>
+
+                <p>
+                    Os robôs industriais são máquinas utilizadas nas fábricas para realizar tarefas como montar produtos, soldar peças, pintar e transportar materiais. Eles ajudam a aumentar a produtividade, melhorar a precisão e reduzir os riscos para os trabalhadores. Com o avanço da tecnologia, esses robôs estão cada vez mais modernos e inteligentes. 🤖🏭
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images.jpeg"
+                    alt="Jogos de estratégia"
+                >
+
+                <h3>robôs domésticos</h3>
+
+                <p>
+                    Os robôs domésticos são máquinas criadas para ajudar nas tarefas do dia a dia dentro de casa. Eles podem aspirar o chão, limpar piscinas e até cortar a grama. Alguns utilizam sensores e inteligência artificial para realizar suas funções de forma automática. Esses robôs facilitam a rotina das pessoas, economizam tempo e tornam as tarefas domésticas mais práticas. 🤖🏠
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (2).jpeg"
+                    alt="Jogos digitais e videogame"
+                >
+
+                <h3>robôs agrícolas</h3>
+
+                <p>
+                    Os robôs agrícolas são máquinas utilizadas na agricultura para facilitar o trabalho no campo. Eles podem ajudar a plantar, colher alimentos, monitorar plantações e identificar pragas. Com o uso de sensores e inteligência artificial, esses robôs tornam a produção mais eficiente, economizam tempo e ajudam os agricultores a cuidar melhor das plantações. 🤖🌱
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>funcionabilidade</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>humanoide</h3>
+
+                <p>
+                    O robô humanoide é uma máquina com aparência e movimentos semelhantes aos humanos, capaz de realizar tarefas, interagir com pessoas e ajudar em atividades domésticas, industriais e de saúde.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>industriais</h3>
+
+                <p>
+                    Os robôs industriais são máquinas utilizadas nas fábricas para realizar tarefas como montar peças, soldar, pintar e transportar materiais, aumentando a produtividade, a precisão e a segurança no trabalho.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>domésticos</h3>
+
+                <p>
+                    Os robôs domésticos são máquinas que ajudam nas tarefas de casa, como aspirar o pó, limpar o chão e cortar a grama, facilitando o dia a dia e economizando tempo.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>agrícolas</h3>
+
+                <p>
+                    Os robôs agrícolas são máquinas utilizadas na agricultura para plantar, colher, irrigar e monitorar as plantações, ajudando a aumentar a produtividade e reduzir o esforço dos trabalhadores.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+        <div class="reflexao">
+
+            <h2>no que agrega no cotidiano:</h2>
+
+            <p>
+                Os robôs podem ajudar no cotidiano de várias formas, como limpar a casa, preparar alimentos, auxiliar pessoas idosas, ajudar em hospitais, realizar tarefas perigosas e facilitar o trabalho nas fábricas e plantações. Além disso, podem ajudar nos estudos e realizar tarefas repetitivas, economizando tempo e esforço e tornando a vida das pessoas mais prática e confortável.
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+        <h2></h2>
+
+
+        <div class="atividade">
+
+            <h3>1- Os robôs ajudam as pessoas em diversas tarefas do dia a dia.</h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>2- Os robôs domésticos facilitam a limpeza e a organização da casa.</h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>3- Os robôs industriais ajudam na fabricação de produtos.</h3>
+
+            <p>
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>4- Os robôs agrícolas auxiliam no plantio e na colheita.
+
+            </h3>
+
+            <p>objetivo
+                
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>5- Os robôs humanoides podem interagir com as pessoas e realizar diferentes atividades.</h3>
+
+            <p>
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>6- A robótica torna muitas tarefas mais rápidas, práticas e seguras.</h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>conclusão</h2>
+
+            <p>
+                Concluindo, os robôs são muito importantes para a sociedade, pois ajudam em diversas atividades, como tarefas domésticas, trabalhos industriais, agricultura e cuidados com as pessoas. Eles facilitam o cotidiano, economizam tempo e aumentam a segurança. Com o avanço da tecnologia, os robôs poderão ajudar ainda mais as pessoas no futuro.
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            🎮 Jogos Digitais – 1º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Imaginar. Programar. Jogar. Aprender.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
